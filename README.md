@@ -19,7 +19,7 @@ In a browser:
 In [Node.js](https://nodejs.org/):
 
 ```js
-const he = require('string-methods-extension');
+require('string-methods-extension');
 ```
 
 Using yarn
