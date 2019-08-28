@@ -11,7 +11,7 @@ let platform ="";
         // only CommonJS-like enviroments that support module.exports,
         // like Node.
         platform = "nodejs";
-        console.log(`${platform} ${process.versions.v8}`);
+        //console.log(`${platform} ${process.versions.v8}`);
         module.exports = factory();
     } else {
         // Browser globals (root is window)
