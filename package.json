@@ -1,6 +1,6 @@
 {
   "name": "string-methods-extension",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "An extension to String Methods, to add some features to ECMAScript 6. It works bothe for Node and the browser.",
   "main": "app.js",
   "scripts": {

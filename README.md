@@ -44,8 +44,11 @@ Using yarn
 The `trim()` method removes whitespace of a specified character from both sides of a string.
 
 ```javascript
-`     ahsdfjhfhf    `.trim();                                               // `ahsdfjhfhf`
-`......ahsdfjhfhf.....`.trim('.');                                          // `ahsdfjhfhf`
+`     ahsdfjhfhf    `.trim();
+// => `ahsdfjhfhf`
+
+`......ahsdfjhfhf.....`.trim('.');
+// => `ahsdfjhfhf`
 ```
 
 ### trimStart
@@ -53,8 +56,11 @@ The `trim()` method removes whitespace of a specified character from both sides 
 The `trimStart()` method removes whitespace of a specified character at the left side of a string.
 
 ```javascript
-`     ahsdfjhfhf    `.trimStart();                                          // `ahsdfjhfhf    `
-`......ahsdfjhfhf.....`.trimStart('.');                                     // `ahsdfjhfhf.....`
+`     ahsdfjhfhf    `.trimStart();
+// => `ahsdfjhfhf    `
+
+`......ahsdfjhfhf.....`.trimStart('.');
+// => `ahsdfjhfhf.....`
 ```
 
 ### trimEnd
@@ -62,8 +68,11 @@ The `trimStart()` method removes whitespace of a specified character at the left
 The `trimEnd()` method removes whitespace of a specified character at the right side of a string.
 
 ```javascript
-`     ahsdfjhfhf    `.trimEnd();                                            // `     ahsdfjhfhf`
-`......ahsdfjhfhf.....`.trimEnd('.');                                       // `......ahsdfjhfhf`
+`     ahsdfjhfhf    `.trimEnd();
+// => `     ahsdfjhfhf`
+
+`......ahsdfjhfhf.....`.trimEnd('.');
+// => `......ahsdfjhfhf`
 ```
 
 ### reverse
@@ -71,8 +80,11 @@ The `trimEnd()` method removes whitespace of a specified character at the right 
 The `reverse()` method reverse the characters of a string.
 
 ```javascript
-`abcdef`.reverse();                                                         // `fedcba`
-`Hello World`.reverse();                                                    // `dlroW olleH`
+`abcdef`.reverse();
+// => `fedcba`
+
+`Hello World`.reverse();
+// => `dlroW olleH`
 ```
 
 ### stripTags
@@ -80,8 +92,11 @@ The `reverse()` method reverse the characters of a string.
 The `stripTags()` method removes html or xml tags from a string.
 
 ```javascript
-`Hello <b>world!</b>`.stripTags();                                          // `Hello world!`
-`Hello <b><a href="hello.html">world!</a></b>`.stripTags();                 // `Hello world!`
+`Hello <b>world!</b>`.stripTags();
+// => `Hello world!`
+
+`Hello <b><a href="hello.html">world!</a></b>`.stripTags();
+// => `Hello world!`
 ```
 
 ### stripWhiteSpace
@@ -89,8 +104,11 @@ The `stripTags()` method removes html or xml tags from a string.
 The `stripWhiteSpace()` method removes white spaces from a string, with a single space or specified character.
 
 ```javascript
-`test     test    test`.stripWhiteSpace();                                  // `test test test`
-`test     test    test`.stripWhiteSpace('.');                               // `test.test.test`
+`test     test    test`.stripWhiteSpace();
+// => `test test test`
+
+`test     test    test`.stripWhiteSpace('.');
+// => `test.test.test`
 ```
 
 ### replaceAll
@@ -98,9 +116,11 @@ The `stripWhiteSpace()` method removes white spaces from a string, with a single
 The `replaceAll()` method returns a string where a specified string is replaced with another specified string.
 
 ```javascript
-`123 test nl.`.replaceAll({'123': 'abc','nl': 'Netherlands',});             // `abc test Netherlands.`
+`123 test nl.`.replaceAll({'123': 'abc','nl': 'Netherlands',});
+// => `abc test Netherlands.`
+
 `You should eat fruits, vegetables, and fiber every day`.replaceAll({'fruits': 'pizza','vegetables': 'beer', 'fiber': 'ice cream',});
-                                                                            // `You should eat pizza, beer, and ice cream every day`
+// => `You should eat pizza, beer, and ice cream every day`
 ```
 
 ### encodeXML
@@ -108,7 +128,8 @@ The `replaceAll()` method returns a string where a specified string is replaced 
 The `encodeXML()` method adds XML encoding to a string.
 
 ```javascript
-`test&"test" 1<2`.encodeXML();                                              // `test&amp;&quot;testquot; 1&lt;2`
+`test&"test" 1<2`.encodeXML();
+// => `test&amp;&quot;testquot; 1&lt;2`
 ```
 
 ### decodeXML
@@ -116,7 +137,8 @@ The `encodeXML()` method adds XML encoding to a string.
 The `decodeXML()` method removes XML encoding form a string.
 
 ```javascript
-`test&amp;&quot;testquot; 1&lt;2`.decodeXML();                              // `test&"test" 1<2`
+`test&amp;&quot;testquot; 1&lt;2`.decodeXML();
+// => `test&"test" 1<2`
 ```
 
 
