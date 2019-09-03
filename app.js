@@ -37,7 +37,17 @@ let platform ="";
                 .replace(/[.*+?^${}()|[\]\\<>]/g, '\\$&')
                 .replace(/\x08/g, '\\x08');
     };
-    //console.log(sayHelloWorld());
+    /**
+     * Remove line breaks
+     * @param  {String} chars
+     * @return {String}
+     * \r\n - on a windows computer
+     * \r - Carriage Return on an Apple computer
+     * \n - Line Feed on Linux
+     */
+    String.prototype.stripLineBreak = function(chars = " ") {
+        return this.replace(/(\r\n|\n|\r)/gm, chars);
+    };    
     /**
      * Trim character on left side
      * @param  {String} chars

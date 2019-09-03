@@ -8,6 +8,14 @@ const assert = require('chai').assert;
 //const app = require('../app');
 
 describe('stringMethods', function(){
+    it(`"test\ntest\ntest.".stripLineBreak() #=> 'test test test.'`, function(){
+        let input = `test
+test
+test.`;
+        let method = input.stripLineBreak();
+        let output = `test test test.`; 
+        assert.equal(method, output);
+    });
     it(`"     ahsdfjhfhf    ".trimStart() #=> 'ahsdfjhfhf    '`, function(){
         let input = "     ahsdfjhfhf    ";
         let method = input.trimStart();

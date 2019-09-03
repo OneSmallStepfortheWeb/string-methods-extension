@@ -27,21 +27,37 @@ Using yarn
 `yarn add string-methods-extension`
 
 ## Table of Contents
+* [stripLineBreak](#striplinebreak)
 * [trim](#trim)
-* [trimStart](#trimStart)
-* [trimEnd](#trimEnd)
+* [trimStart](#trimstart)
+* [trimEnd](#trimend)
 * [reverse](#reverse)
-* [stripTags](#stripTags)
-* [stripWhiteSpace](#stripWhiteSpace)
-* [replaceAll](#replaceAll)
-* [encodeXML](#encodeXML)
-* [decodeXML](#decodeXML)
+* [stripTags](#striptags)
+* [stripWhiteSpace](#stripwhitespace)
+* [replaceAll](#replaceall)
+* [encodeXML](#encodexml)
+* [decodeXML](#decodexml)
 
 ## Usage
 
+### stripLineBreak
+
+The `stripLineBreak()` method removes all line breaks from a string.
+
+```javascript
+`test\ntest\ntest.`.stripLineBreak();
+// => `test test test.`
+
+`test \ntest \ntest.`.stripLineBreak('');
+// => `test test test.`
+
+`test\ntest\ntest.`.stripLineBreak('.');
+// => `test.test.test.`
+```
+
 ### trim
 
-The `trim()` method removes whitespace of a specified character from both sides of a string.
+The `trim()` method removes whitespace or a specified character from both sides of a string.
 
 ```javascript
 `     ahsdfjhfhf    `.trim();
@@ -53,7 +69,7 @@ The `trim()` method removes whitespace of a specified character from both sides 
 
 ### trimStart
 
-The `trimStart()` method removes whitespace of a specified character at the left side of a string.
+The `trimStart()` method removes whitespace or a specified character at the left side of a string.
 
 ```javascript
 `     ahsdfjhfhf    `.trimStart();
@@ -65,7 +81,7 @@ The `trimStart()` method removes whitespace of a specified character at the left
 
 ### trimEnd
 
-The `trimEnd()` method removes whitespace of a specified character at the right side of a string.
+The `trimEnd()` method removes whitespace or a specified character at the right side of a string.
 
 ```javascript
 `     ahsdfjhfhf    `.trimEnd();
